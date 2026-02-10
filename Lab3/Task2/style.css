@@ -1,0 +1,86 @@
+
+
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    background: #f2f2f2;
+}
+
+.todo-container {
+    width: 450px;
+    margin: 50px auto;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+
+.todo-header {
+    background: #272727;
+    color: white;
+    padding: 18px;
+    text-align: center;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.todo-body {
+    background: #f4f2f2;
+    padding: 20px;
+}
+
+.input-box {
+    display: flex;
+    gap: 5px;
+}
+
+input {
+    flex: 1;
+    padding: 5px;
+}
+
+button {
+    padding: 6px 14px;
+    cursor: pointer;
+    border: none;
+    border-radius: 6px;
+    background: #272727;
+    color: white;
+    font-weight: 500;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+}
+
+li {
+    padding: 10px;
+    background: #eaeaea;
+    margin-bottom: 6px;
+    cursor: pointer;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+li.done {
+    text-decoration: line-through;
+    color: gray;
+}
+    
+.priority {
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    background: #ffa3a3;
+}
+
+.done {
+    text-decoration: line-through;
+    opacity: 0.6;
+}
+.delete {
+    color: red;
+    float: right;
+    cursor: pointer;
+    font-weight: bold;
+}
