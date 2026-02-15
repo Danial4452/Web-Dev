@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core'; // Добавили OnInit
+import { Component, Input, OnInit } from '@angular/core'; 
 import { Product } from '../product.model';
 
 @Component({
@@ -10,11 +10,10 @@ import { Product } from '../product.model';
 export class ProductItemComponent implements OnInit {
   @Input() product!: Product;
 
-  // Переменная, которая отвечает за то, что мы видим в большой рамке
+  // в большой рамке
   selectedImage: string = '';
 
   ngOnInit() {
-    // Как только компонент загрузился, ставим главное фото из модели
     this.selectedImage = this.product.image;
   }
 
