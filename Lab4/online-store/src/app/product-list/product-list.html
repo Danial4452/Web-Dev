@@ -1,0 +1,18 @@
+<header class="main-header">
+  <div class="header-content">
+    <h1 class="logo">Online<span>Store</span></h1>
+    <nav>
+      <span class="catalog-title">Каталог товаров</span>
+    </nav>
+  </div>
+</header>
+
+<div class="container">
+  <div class="product-grid">
+    @for (product of products; track product.id) {
+      <app-product-item [product]="product"></app-product-item>
+    }
+  </div>
+</div>
+
+

@@ -1,0 +1,58 @@
+h2 {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+/* Шапка сайта */
+.main-header {
+    background: #ffffff;
+    padding: 15px 0;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    margin-bottom: 40px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 800;
+    color: #333;
+    margin: 0;
+}
+
+.logo span {
+    color: #e00000; /* Выделяем цветом часть лого */
+}
+
+.catalog-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #555;
+    border-bottom: 3px solid #e00000;
+    padding-bottom: 5px;
+}
+
+.container {
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 0 20px 50px;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+    justify-items: center;
+}
