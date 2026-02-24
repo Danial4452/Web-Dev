@@ -1,0 +1,24 @@
+<div class="container">
+  <h1>{{ title }}</h1>
+
+  <div class="category-list">
+    @for (cat of categories; track cat.id) {
+      <button 
+        (click)="selectCategory(cat.id)" 
+        [class.active]="selectedCategoryId === cat.id">
+        {{ cat.name }}
+      </button>
+    }
+  </div>
+
+  <hr>
+
+  @if (selectedCategoryId) {
+    <app-product-list 
+      [products]="filteredProducts" 
+      (remove)="handleRemove($event)">
+    </app-product-list>
+  } @else {
+    <p class="welcome-msg">Выберите категорию, чтобы увидеть товары (Смартфоны, Ноутбуки и т.д.)</p>
+  }
+</div>

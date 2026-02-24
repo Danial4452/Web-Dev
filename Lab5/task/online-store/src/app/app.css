@@ -1,0 +1,30 @@
+.category-list {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin: 30px 0;
+}
+
+.category-list button {
+  padding: 12px 24px;
+  border: 2px solid #e0e0e0;
+  border-radius: 30px;
+  background: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: #555;
+}
+
+
+.category-list button.active {
+  background: #007bff;
+  color: white;
+  border-color: #007bff;
+  box-shadow: 0 4px 15px rgba(0, 123, 255, 0.3);
+}
+
+.category-list button:hover:not(.active) {
+  border-color: #007bff;
+  color: #007bff;
+}

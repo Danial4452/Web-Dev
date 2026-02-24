@@ -1,0 +1,38 @@
+<div class="product-card">
+  <img [src]="product.image" [alt]="product.name" class="product-img">
+  
+  <h3>{{ product.name }}</h3>
+  <p class="description">{{ product.description }}</p>
+  
+  <div class="product-details">
+    <span class="price">
+      {{ product.price | number }} {{ product.categoryId === 2 ? '$' : '₸' }}
+    </span>
+
+    @if (product.categoryId !== 2) {
+      <span class="rating">⭐ {{ product.rating }}</span>
+    }
+  </div>
+
+  <div class="btn-group">
+    <button class="btn-like" (click)="like()">
+      <i class="fa-solid fa-heart"></i> {{ product.likes }}
+    </button>
+
+    <button class="btn-wa" (click)="share('wa')">
+      <i class="fa-brands fa-whatsapp"></i>
+    </button>
+
+    <button class="btn-tg" (click)="share('tg')">
+      <i class="fa-brands fa-telegram"></i>
+    </button>
+
+    <button class="btn-remove" (click)="remove()">
+      <i class="fa-solid fa-trash"></i>
+    </button>
+  </div>
+  
+  <a [href]="product.link" target="_blank" class="buy-link">
+    {{ product.categoryId === 2 ? 'Посмотреть на Farfetch' : 'Посмотреть на Kaspi' }}
+  </a>
+</div>
