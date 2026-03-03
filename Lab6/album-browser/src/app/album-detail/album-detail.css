@@ -1,0 +1,41 @@
+.detail-container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 30px;
+  background-color: #000000;
+  border-radius: 15px;
+  border: 1px solid #333;
+  text-align: center;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  margin: 20px 0;
+  background: #1a1a1a;
+  border: 1px solid #444;
+  color: white;
+  border-radius: 8px;
+}
+
+input:focus {
+  border-color: #ff8c00;
+  outline: none;
+}
+
+.save-btn {
+  background-color: #ff8c00;
+  color: black;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.back-btn {
+  color: #aaa;
+  text-decoration: none;
+  display: block;
+  margin-top: 20px;
+}

@@ -1,0 +1,15 @@
+nav {
+  padding: 1rem;
+  background: #080808;
+  text-align: right;
+  padding: auto;
+}
+nav a {
+  margin-right: 15px;
+  text-decoration: none;
+  color: #fafbfd;
+}
+nav a.active {
+  font-weight: bold;
+  color: #f69002;
+}
